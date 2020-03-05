@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 app.get('/peliculas',peliculaControlador.peliculas);
-app.get('/peliculas/:pagina/:titulo/:cantidad/:columna_orden/:tipo_orden/:anio',peliculaControlador.peliculas);
 app.get('/generos',peliculaControlador.generos);
 app.get('/peliculas/recomendacion',peliculaControlador.recomendaciones);
 app.get('/peliculas/:id',peliculaControlador.actorPelicula);
